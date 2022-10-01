@@ -6,7 +6,7 @@ const Header = () => {
         <div className="navbar bg-accent">
             <div className="flex-1 ml-10">
                 <img src={logo} alt="" className='w-10' />
-                <a className="text-3xl font-bold ml-3">Fitness Freaks</a>
+                <a className="text-4xl font-bold ml-3">Fitness Freaks</a>
             </div>
             <div className="flex-none mr-10">
                 <ul className="menu menu-horizontal p-0 text-xl font-semibold">

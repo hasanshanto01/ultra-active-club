@@ -14,7 +14,7 @@ const Exercises = () => {
         <div className='grid grid-cols-4'>
 
             {/* exerciseItem */}
-            <div className='border-2 border-indigo-600 col-start-1 col-span-3'>
+            <div className='col-start-1 col-span-3'>
                 <h2 className='mt-5 ml-20 text-xl font-semibold'>Select today’s exercise</h2>
                 <div className='grid grid-cols-3 gap-7 my-7 mx-20'>
                     {
