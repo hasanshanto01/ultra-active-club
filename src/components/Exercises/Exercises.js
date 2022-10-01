@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ExerciseItem from '../ExerciseItem/ExerciseItem';
+import UserInfo from '../UserInfo/UserInfo';
 
 const Exercises = () => {
     const [exercises, setExercises] = useState([]);
@@ -27,8 +28,8 @@ const Exercises = () => {
             </div>
 
             {/* cart */}
-            <div className='border-2 border-red-600'>
-                <h1>cart</h1>
+            <div className='bg-slate-100'>
+                <UserInfo></UserInfo>
             </div>
 
         </div>
