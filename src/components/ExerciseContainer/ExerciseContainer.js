@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import BreakAndDetails from '../BreakAndDetails/BreakAndDetails';
 import ExerciseItem from '../ExerciseItem/ExerciseItem';
-import UserInfo from '../UserInfo/UserInfo';
+import SideBarContainer from '../SideBarContainer/SideBarContainer';
 
 const ExerciseContainer = () => {
     const [exercises, setExercises] = useState([]);
@@ -20,12 +19,12 @@ const ExerciseContainer = () => {
     }
 
     return (
-        <div className='grid grid-cols-4'>
+        <div className='grid grid-cols-1 md:grid-cols-5'>
 
             {/* exerciseItem */}
-            <div className='col-start-1 col-span-3'>
+            <div className='col-start-1 col-span-3 lg:col-span-4 order-last md:order-first'>
                 <h2 className='mt-5 ml-20 text-xl font-semibold'>Select today’s exercise</h2>
-                <div className='grid grid-cols-3 gap-7 my-7 mx-20'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-7 mx-20'>
                     {
                         exercises.map(exerciseItem => <ExerciseItem
                             key={exerciseItem.id}
@@ -36,12 +35,11 @@ const ExerciseContainer = () => {
                 </div>
             </div>
 
-            {/* cart */}
-            <div className='bg-slate-100'>
-                <UserInfo></UserInfo>
-                <BreakAndDetails
+            {/* sidebar container */}
+            <div className='bg-slate-100 col-span-2 lg:col-span-1'>
+                <SideBarContainer
                     exerciseTime={exerciseTime}
-                ></BreakAndDetails>
+                ></SideBarContainer>
             </div>
 
         </div>
