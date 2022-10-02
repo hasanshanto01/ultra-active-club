@@ -4,7 +4,7 @@
         "img": "https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/another-woman-jumping-rope.jpg",
         "title": "Skipping",
         "details": "Skipping helps to improve heart rate and blood pressure. It can also help you “boost your immune system, balance your metabolism, and improve your overall health in a short period of time,” according to the British Rope Skipping Association.",
-        "duration": 5
+        "duration": 10
     },
     {
         "id": "e2",
@@ -18,7 +18,7 @@
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPY6bWfom3TreLpqZbAYwFmpj2RCxbLreKaA&usqp=CAU",
         "title": "Squats",
         "details": "Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles. As you exercise, the movement strengthens your tendons, bones, and ligaments around the leg muscles.",
-        "duration": 5
+        "duration": 8
     },
     {
         "id": "e4",
@@ -32,21 +32,21 @@
         "img": "https://www.discovertamborine.com/wp-content/uploads/2015/02/climbers-execrcise-web-400w.jpg",
         "title": "Mountain Climber",
         "details": "As a compound exercise that utilises multiple muscle groups in your whole body, mountain climbers are an effective way of strengthening your arms, back, shoulders, core and legs. Another benefit of using multiple muscles at once is an increased heart rate, which will help you burn more calories.",
-        "duration": 5
+        "duration": 8
     },
     {
         "id": "e6",
         "img": "https://www.theglobeandmail.com/resizer/49854rnlBsWQNT9tFLpYeacEC3o=/arc-anglerfish-tgam-prod-tgam/public/TFNCQAP3PRCCDAPGBVTDQAACJE",
         "title": "Planks",
         "details": "Convenience. Planking is free and takes only a couple of minutes — no gym membership or special equipment required. Protects your back. The ability to brace your core is important for many everyday activities. Prevents exercise-related injuries. Improves posture. Boosts mental health.",
-        "duration": 5
+        "duration": 3
     },
     {
         "id": "e7",
         "img": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/07/Fitness-man-doing-flutter-kicks-ab-exercise.jpg",
         "title": "Flutter Kicks",
         "details": "Target multiple muscles. The move activates the hip flexors, the lower back, and the quads a bit more than other exercises, says Kendter. Up cardio health with low-impact. Improve muscular endurance.",
-        "duration": 5
+        "duration": 7
     },
     {
         "id": "e8",
@@ -60,6 +60,6 @@
         "img": "https://www.mensjournal.com/wp-content/uploads/mf/15-workouts-glutebridge-main-new.jpg?quality=86&strip=all",
         "title": "Glute bridge",
         "details": "It warms up your glute muscles for other exercises. It tones your gluteal muscles. It adds tension to the entire glute bridge motion, increasing the effectiveness of your workout. It strengthens your core muscles, which help you in everyday activities.",
-        "duration": 5
+        "duration": 7
     }
 ]

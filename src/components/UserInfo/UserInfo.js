@@ -15,7 +15,7 @@ const UserInfo = () => {
                 </div>
             </div>
 
-            <div className='bg-base-100 w-4/5 h-20 rounded-lg mx-auto flex justify-evenly items-center'>
+            <div className='bg-base-100 w-4/5 h-20 rounded-lg mx-auto flex justify-evenly items-center my-5'>
                 <div>
                     <p><span className='text-xl font-bold'>78</span>kg</p>
                     <p>Weight</p>

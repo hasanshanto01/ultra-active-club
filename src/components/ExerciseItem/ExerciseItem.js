@@ -2,7 +2,8 @@ import React from 'react';
 
 const ExerciseItem = (props) => {
     // console.log(props.exerciseItem);
-    const { img, title, details, duration } = props.exerciseItem;
+    const { handleAddToList, exerciseItem } = props;
+    const { img, title, details, duration } = exerciseItem;
     // console.log(`${details.slice(0, 200)}...`);
     return (
         <div className="card w-full glass p-3">
@@ -13,7 +14,7 @@ const ExerciseItem = (props) => {
                 <p className='font-semibold'>Duration : <span className='font-bold'>{duration}min</span>
                 </p>
                 <div className="card-actions justify-center w-full">
-                    <button className="btn btn-primary w-full">Add to list</button>
+                    <button onClick={() => handleAddToList(exerciseItem)} className="btn btn-primary w-full">Add to list</button>
                 </div>
             </div>
         </div>

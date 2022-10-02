@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react';
+import BreakAndDetails from '../BreakAndDetails/BreakAndDetails';
 import ExerciseItem from '../ExerciseItem/ExerciseItem';
 import UserInfo from '../UserInfo/UserInfo';
 
-const Exercises = () => {
+const ExerciseContainer = () => {
     const [exercises, setExercises] = useState([]);
+    const [exerciseTime, setExerciseTime] = useState(0);
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
+
+    const handleAddToList = selectedExercise => {
+        // console.log(selectedExercise);
+        let totalExerciseTime = exerciseTime;
+        totalExerciseTime = totalExerciseTime + selectedExercise.duration;
+        // console.log(totalExerciseTime);
+        setExerciseTime(totalExerciseTime);
+    }
 
     return (
         <div className='grid grid-cols-4'>
@@ -22,6 +32,7 @@ const Exercises = () => {
                         exercises.map(exerciseItem => <ExerciseItem
                             key={exerciseItem.id}
                             exerciseItem={exerciseItem}
+                            handleAddToList={handleAddToList}
                         ></ExerciseItem>)
                     }
                 </div>
@@ -30,10 +41,13 @@ const Exercises = () => {
             {/* cart */}
             <div className='bg-slate-100'>
                 <UserInfo></UserInfo>
+                <BreakAndDetails
+                    exerciseTime={exerciseTime}
+                ></BreakAndDetails>
             </div>
 
         </div>
     );
 };
 
-export default Exercises;
+export default ExerciseContainer;
