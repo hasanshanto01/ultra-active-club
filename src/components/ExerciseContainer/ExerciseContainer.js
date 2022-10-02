@@ -14,10 +14,8 @@ const ExerciseContainer = () => {
     }, [])
 
     const handleAddToList = selectedExercise => {
-        // console.log(selectedExercise);
         let totalExerciseTime = exerciseTime;
         totalExerciseTime = totalExerciseTime + selectedExercise.duration;
-        // console.log(totalExerciseTime);
         setExerciseTime(totalExerciseTime);
     }
 

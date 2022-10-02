@@ -1,10 +1,9 @@
 import React from 'react';
 
 const ExerciseItem = (props) => {
-    // console.log(props.exerciseItem);
     const { handleAddToList, exerciseItem } = props;
     const { img, title, details, duration } = exerciseItem;
-    // console.log(`${details.slice(0, 200)}...`);
+
     return (
         <div className="card w-full glass p-3">
             <figure><img src={img} alt="car!" className='w-80 h-48 rounded-xl' /></figure>

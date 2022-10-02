@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addToLocalStorage, getFromLocalStorage } from '../../utilities/fakebd';
 
 const BreakAndDetails = (props) => {
-    // console.log(props);
     const { exerciseTime } = props;
-    // console.log(exerciseTime);
+
     const [breakTime, setBreakTime] = useState(0);
+
+    useEffect(() => {
+        const storedBreakTime = getFromLocalStorage('break-time');
+
+        if (storedBreakTime) {
+            setBreakTime(storedBreakTime);
+        }
+        else {
+            setBreakTime(0);
+        }
+
+    }, [])
     const handleAddBreak = (event) => {
-        // console.log(event.target.innerText);
         const newBreakTime = event.target.innerText;
         setBreakTime(newBreakTime);
+        addToLocalStorage(newBreakTime);
     }
 
     return (
@@ -26,7 +38,7 @@ const BreakAndDetails = (props) => {
 
 
             </div>
-            <h2 className='text-xl font-semibold mx-8 mt-10'>Add A Break</h2>
+            <h2 className='text-xl font-semibold mx-8 mt-10'>Exercise Details</h2>
             <div className='bg-base-100 w-4/5 h-14 rounded-lg mx-auto flex justify-around items-center my-5'>
                 <p className='text-lg font-semibold'>Exercise Time</p>
                 <p className='text-lg'><span>{exerciseTime}</span> minutes</p>
