@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuestionAnswer = () => {
     return (
-        <div className='rounded-xl border-2 border-purple-200 w-4/5 mx-auto my-10 p-10  bg-slate-200'>
+        <div className='rounded-xl border-2 border-purple-200 w-4/5 mx-auto my-10 p-10  bg-slate-100'>
             <h2 className="text-2xl font-bold text-center">Frequently Asked Questions</h2>
             <div className='mt-5'>
                 <div className='my-4'>

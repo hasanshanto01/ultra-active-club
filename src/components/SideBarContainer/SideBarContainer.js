@@ -6,7 +6,7 @@ const SideBarContainer = (props) => {
     const { exerciseTime } = props;
     // console.log(exerciseTime);
     return (
-        <div className='sticky top-0'>
+        <div className='sticky top-0 p-5'>
             <UserInfo></UserInfo>
             {/* <BreakAndDetails
                 // exerciseTime={exerciseTime}

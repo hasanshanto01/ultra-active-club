@@ -19,10 +19,10 @@ const ExerciseContainer = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-5'>
+        <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4'>
 
             {/* exerciseItem */}
-            <div className='col-start-1 col-span-3 lg:col-span-4 order-last md:order-first'>
+            <div className='col-start-1 col-span-3 order-last md:order-first'>
                 <h2 className='mt-5 ml-20 text-xl font-semibold'>Select today’s exercise</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-7 mx-20'>
                     {
@@ -36,7 +36,7 @@ const ExerciseContainer = () => {
             </div>
 
             {/* sidebar container */}
-            <div className='bg-slate-200 col-span-2 lg:col-span-1'>
+            <div className='bg-slate-100 col-span-2 lg:col-span-1'>
                 <SideBarContainer
                     exerciseTime={exerciseTime}
                 ></SideBarContainer>

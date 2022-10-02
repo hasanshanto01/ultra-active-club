@@ -11,7 +11,7 @@ const UserInfo = () => {
                 <img src={user} alt="" className='w-20 rounded-full' />
                 <div className='ml-4'>
                     <h2 className="text-2xl font-bold mb-1">Ali Hasan</h2>
-                    <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> <span>Dhaka,Gazipur</span></p>
+                    <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> <small>Dhaka,Gazipur</small></p>
                 </div>
             </div>
 
