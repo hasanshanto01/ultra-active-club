@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { addToLocalStorage, getFromLocalStorage } from '../../utilities/fakebd';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BreakAndDetails = (props) => {
     const { exerciseTime } = props;
@@ -21,6 +23,10 @@ const BreakAndDetails = (props) => {
         const newBreakTime = event.target.innerText;
         setBreakTime(newBreakTime);
         addToLocalStorage(newBreakTime);
+    }
+
+    const toastNotifier = () => {
+        toast("Congratulations! Today's exercise completed.");
     }
 
     return (
@@ -48,8 +54,19 @@ const BreakAndDetails = (props) => {
                 <p className='text-lg'><span>{breakTime}</span> seconds</p>
             </div>
             <div className="card-actions justify-center w-4/5 mx-auto my-10">
-                <button className="btn btn-primary w-full text-white">Activity Completed</button>
+                <button onClick={toastNotifier} className="btn btn-primary w-full text-white">Activity Completed</button>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            ></ToastContainer>
         </div>
     );
 };
