@@ -36,7 +36,7 @@ const ExerciseContainer = () => {
             </div>
 
             {/* sidebar container */}
-            <div className='bg-slate-100 col-span-2 lg:col-span-1'>
+            <div className='bg-slate-200 col-span-2 lg:col-span-1'>
                 <SideBarContainer
                     exerciseTime={exerciseTime}
                 ></SideBarContainer>
